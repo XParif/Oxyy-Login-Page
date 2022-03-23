@@ -61,7 +61,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
 }
 
 .login-button .apple-logo {
@@ -124,6 +124,7 @@ main {
   outline: none;
   margin-top: 1.5rem;
   padding: 1.2rem 3.5rem;
+  cursor: pointer;
 }
 
 .gear-icon {
@@ -136,6 +137,7 @@ main {
   right: 0;
   top: 30%;
   transition: .5s;
+  cursor: pointer;
 }
 
 .gear-icon:hover {
