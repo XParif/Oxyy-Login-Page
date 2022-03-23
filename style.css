@@ -56,16 +56,36 @@ main {
 .login-button .google-logo,
 .login-button .apple-logo {
   background-color: #596168;
-  width: 2.5rem;
-  height: 2.5rem;
+  padding: 1rem;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .login-button .apple-logo {
   margin-left: 0.25rem;
+}
+
+.google-logo p,
+.apple-logo p {
+  display: none;
+}
+
+.google-logo:hover,
+.apple-logo:hover {
+  -webkit-animation: fadeIn 3s;
+  animation: fadeIn 3s;
+  background-color: #006adb;
+}
+
+
+.google-logo:hover p,
+.apple-logo:hover p {
+  margin-left: 1rem;
+  display: block;
+
 }
 
 .divider {
@@ -104,4 +124,36 @@ main {
   outline: none;
   margin-top: 1.5rem;
   padding: 1.2rem 3.5rem;
+}
+
+.gear-icon {
+  background-color: #596168;
+  color: white;
+  font-size: 2rem;
+  padding: .5rem;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  transition: .5s;
+}
+
+.gear-icon:hover {
+  padding: 1rem;
+  top: 29%;
+  background-color: #006adb;
+}
+
+.gear-icon i:hover {
+  transform: rotate(180deg);
+  transition: 5s;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
 }
